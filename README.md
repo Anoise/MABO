@@ -2,7 +2,7 @@
 
 **Revisiting Long-Term Series Forecasting: Efficient Hyperparameter Tuning Is What You Need**
 
-<!--The repo is the official implementation for the paper: [DeepBooTS: Improving Time Series Forecasting by Progressively Learning Residuals](https://arxiv.org/abs/2402.02332).
+<!--The repo is the official implementation for the paper: [MABO: Improving Time Series Forecasting by Progressively Learning Residuals](https://arxiv.org/abs/2402.02332).
 
 Cited by [Awesome Time Series Forecasting/Prediction Papers](https://github.com/ddz16/TSFpaper); 
 [English Blog](); [Zhihu](https://zhuanlan.zhihu.com/p/703948963); [CSDN Blog](https://blog.csdn.net/liangdaojun/article/details/139748253)-->
@@ -25,17 +25,17 @@ Time Series Forecasting still faces two major problems that require further inve
 
 <div align=center><img src="Images/mabo_arch.png" width="600"></div>
 
-## 3. Training and Testing DeepBooTS
+## 3. Training and Testing MABO
 ### 1) Dataset 
 The datasets can be obtained from [Google Drive](https://drive.google.com/file/d/1l51QsKvQPcqILT3DwfjCgx8Dsg2rpjot/view?usp=drive_link) or [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/f/2ea5ca3d621e4e5ba36a/).
 
 ### 2) Clone the code repository
 ```git
-git clone git@github.com:Anoise/DeepBooTS.git
+git clone git@github.com:Anoise/MABO.git
 ```
 
 ### 3) Training on Time Series Dataset
-Go to the directory "DeepBooTS/CommanTimeSeriesDatasets", we'll find that the bash scripts are all in the 'scripts' folder. Then, you can run the bash script like this:
+Go to the directory "MABO/CommanTimeSeriesDatasets", we'll find that the bash scripts are all in the 'scripts' folder. Then, you can run the bash script like this:
 ```shell
     bash eval_async_mGPUs_AF.sh
 ```
@@ -65,7 +65,7 @@ Specifically, compared to Optuna, Openbox and Hyperopt, MABO brings **39%**, **5
 
 ## 7. Performace on TS Forecasting
 
-DeepBooTS achieves the consistent SOTA performance across all datasets and prediction length configurations.
+MABO achieves the consistent SOTA performance across all datasets and prediction length configurations.
 
 <div align=center><img src="Images/benchmark.png"></div>
 
